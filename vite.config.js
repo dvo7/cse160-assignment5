@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 
-// Use './' so the built site works on GitHub Pages project sites and local preview.
+// GitHub Pages project URL: https://dvo7.github.io/cse160-assignment5/
+// Must match the repo name so built asset URLs resolve correctly.
 export default defineConfig({
-	base: './',
+	base: '/cse160-assignment5/',
 });

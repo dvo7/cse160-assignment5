@@ -15,8 +15,18 @@ npm run dev
 npm run build
 ```
 
-Upload the contents of the `dist/` folder to your host (e.g. GitHub Pages from `/docs` or the `gh-pages` branch).  
-`vite.config.js` uses `base: './'` so relative URLs work on project pages.
+Upload the **contents of the `dist/` folder** after `npm run build` (not the raw repo root). GitHub Actions or the `gh-pages` branch should publish **`dist/`** only.
+
+`vite.config.js` sets `base: '/cse160-assignment5/'` to match  
+`https://dvo7.github.io/cse160-assignment5/` — if you rename the repo, update `base` to `'/YourRepoName/'`.
+
+## Local dev (with this `base`)
+
+After changing `base` to your repo path, open:
+
+`http://localhost:5173/cse160-assignment5/`
+
+(or run `npm run dev` and use the URL Vite prints).
 
 ## Canvas submission
 
